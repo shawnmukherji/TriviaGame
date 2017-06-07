@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Kanye Trivia</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
 <body>
 	<h2 class="quizHeader">How well do you know Kanye?</h2>
@@ -12,14 +14,14 @@
 	<tr>
 	  <td>
 	  	<div>
-	  		<p class="question">1. Quiz question #1</p>
+	  		<p class="question">1. La, laaa, la, la...</p>
 
 	    	<ul>
 	    	<input class="answer" type="radio" name="q1" value="1">
-	        <label id="correctString1">correct answer 1</label>
+	        <label id="correctString1">Wait till I get my money right!</label>
 	    	<br>
 	        <input class="answer" type="radio" name="q1" value="0">
-	        <label>wrong answer</label>
+	        <label>I fantasized about this in Chicago</label>
 	        <br>
 	        <input class="answer" type="radio" name="q1" value="0">
 	        <label>wrong answer</label>
@@ -91,22 +93,23 @@
 	</tr>
 	</table>
 <br/>
-  <div class="submitter">
-          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
-          type="submit" value="Submit" />
-    </div>
+  <p>
+
+  	<!--Timer here-->
+
+  	<span id="timer"></span>
+  </p>
+
   
-<!--show only wrong answers on submit-->
+
+
+
     <div class="quizAnswers" id="correctAnswer1"></div>
 	    <div class="quizAnswers" id="correctAnswer2"></div>
     <div class="quizAnswers" id="correctAnswer3"></div>
     <div class="quizAnswers" id="correctAnswer4"></div>
 
-<!--show score upon submit-->
-    <div>
-    	<h2 class="quizScore" id="userScore"></h2>
-    </div>
-	</div>
+
 
 </body>
 </html>
